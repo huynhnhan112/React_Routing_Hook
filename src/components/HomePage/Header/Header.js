@@ -27,15 +27,34 @@ export default function Header(props) {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
+                                <NavLink activeStyle={{background:'#fff',color:'#000'}} activeClassName="active" className="nav-link" to="/hoc">
+                                    HOC
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
                                 <NavLink activeStyle={{background:'#fff',color:'#000'}} activeClassName="active" className="nav-link" to="/login">
                                     Login
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink activeStyle={{background:'#fff',color:'#000'}} activeClassName="active" className="nav-link" to="/antd">
+                                    Ant Design
                                 </NavLink>
                             </li>
                             <li className="nav-item dropdown">
                                 <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hooks</NavLink>
                                 <div className="dropdown-menu" aria-labelledby="dropdownId">
                                     <NavLink className="dropdown-item" to="/usestate">Use State</NavLink>
-                                    <NavLink className="dropdown-item" to="/useeffect">Use Hook</NavLink>
+                                    <NavLink className="dropdown-item" to="/useeffect">Use Effect</NavLink>
+                                    <NavLink className="dropdown-item" to="/usehook">Use Hook</NavLink>
+                                </div>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Axios</NavLink>
+                                <div className="dropdown-menu" aria-labelledby="dropdownId">
+                                    <NavLink className="dropdown-item" to="/ajaxrcc">Ajax react class</NavLink>
+                                    <NavLink className="dropdown-item" to="/ajaxrfc">Ajax react function</NavLink>
+                                    <NavLink className="dropdown-item" to="/apimiddleware">Api middle ware</NavLink>
                                 </div>
                             </li>
                         </ul>
